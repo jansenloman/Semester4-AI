@@ -1,0 +1,37 @@
+.sliding-text-container {
+    height: 80vh;
+    overflow: hidden;
+    /* clip-path: polygon(0% 25%, 100% 25%, 100% 100%, 0% 100%); */
+}
+.sliding-text {
+    width: 80%;
+    height: 12vh;
+    background-color: var(--highlight);
+    margin: 3% 10px;
+    box-shadow: 10px 14px 0px 2px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s;
+}
+.sliding-text.face-left {
+    float: right;
+    border-radius: 20px 20px 20px 70px;    
+}
+.sliding-text.face-left:hover {
+    transform: translateX(-10%) scale(105%);
+}
+.sliding-text.face-right {
+    float: left;
+    border-radius: 20px 20px 70px 30px;
+}
+.sliding-text.face-right:hover {
+    transform: translateX(10%) scale(105%);
+}
+.notepad-hole {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    box-shadow: 0px 4px 0px 2px inset rgba(0, 0, 0, 0.3);
+}
+.notepad-shadow {
+    box-shadow: 20px 20px 0px 5px rgba(0, 0, 0, 0.6);
+}
